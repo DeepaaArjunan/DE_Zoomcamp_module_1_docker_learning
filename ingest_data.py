@@ -56,7 +56,7 @@ def main(params):
             print('inserted another chunk, took %.3f second' % (t_end - t_start))
 
         except StopIteration:
-            print("Finished ingesting data into the postgres database")
+            print("Congrats!! Finished ingesting data into the postgres database")
             break
 
 if __name__ == '__main__':

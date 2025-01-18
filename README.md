@@ -64,11 +64,11 @@ python ingest_data.py \
 docker build -t taxi_ingest:v001 .
 
 docker run  \
---network=pg_network \
+--network=pg-network \
 taxi_ingest:v001 \
 --user=root \
 --password=root \
---host=pg_database \
+--host=de_zoomcamp_module_1_docker_learning-pgdatabase-1 \
 --port=5432 \
 --db=ny_taxi \
 --table_name=yellow_taxi_data \
